@@ -4,3 +4,12 @@
   background-color: #253141;
   float: left;
 }
+
+.side-bar__user-name{
+  height: 100px;
+}
+
+.side-bar__group-info{
+  height: calc(100vh - 100px);
+  background-color: #2f3e51;
+}

@@ -4,3 +4,19 @@
   background-color: #ffffff;
   float: left;
 }
+
+.main-chat__group-info{
+  height: 100px;
+  background-color: #ffffff;
+  border-bottom: #eeeeee solid;
+}
+
+.main-chat__message-info{
+  height: calc(100vh - 190px);
+  background-color: #fafafa;
+}
+
+.main-chat__message-form{
+  height: 90px;
+  background-color: #d2d2d2;
+}
