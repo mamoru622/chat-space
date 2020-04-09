@@ -30,5 +30,20 @@
   &__group-info{
     height: calc(100% - 100px);
     background-color: #2f3e51;
+
+    &__chat{
+      color: #ffffff;
+      font-weight: bold;
+    
+      &__group-name{
+        font-size: 15px;
+        padding: 20px 20px 0;
+      }
+  
+      &__message-alert{
+        font-size: 11px;
+        padding: 5px 20px 40px;
+      }  
+    }
   } 
 }
