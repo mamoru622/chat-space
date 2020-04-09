@@ -1,3 +1,13 @@
 .side-bar
   .side-bar__user-name
+    .side-bar__user-name__top-items
+      .side-bar__user-name__top-items__name
+        高田
+      .side-bar__user-name__top-items__icon 
+        = link_to "#" do
+          =icon('fas', 'edit', class: 'side-bar__user-name__top-items__icon') 
+        = link_to "#" do
+          =icon('fas', 'cog', class: 'side-bar__user-name__top-items__icon')
   .side-bar__group-info
+    .side-bar__group-info__group-name
+    .side-bar__group-info__message-alert
