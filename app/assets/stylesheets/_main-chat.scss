@@ -66,6 +66,42 @@
   &__message-form{
     height: 90px;
     background-color: #d2d2d2;
-  }
+    display: flex;
 
+    &__input-area{
+      height: 50px;
+      width: calc(100% - 195px);
+      margin: auto 15px auto 40px;
+      background-color: #ffffff;
+      position: relative;
+
+      &__message{
+        position: absolute;
+        height: 50px;
+        width: calc(100% - 40px);
+        padding:0 10px;
+        border-style: none;
+      }
+      &__image{
+        font-size: 1.3rem;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        input{
+          display: none;
+        }
+        cursor: pointer;
+      }
+    }
+    &__submit{
+      margin: auto 40px auto 0;
+      height: 50px;
+      width: 100px;
+      padding: 0 30px;
+      background-color: #38aef0;
+      color: #ffffff;
+      line-height: 50px;
+      cursor: pointer;
+    }
+  }
 }
