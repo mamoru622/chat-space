@@ -1,0 +1,21 @@
+.side-bar
+  .side-bar__user-name
+    .side-bar__user-name__top-items
+      .side-bar__user-name__top-items__name
+        高田
+      .side-bar__user-name__top-items__icon 
+        = link_to "#" do
+          =icon('fas', 'edit', class: 'side-bar__user-name__top-items__icon') 
+        = link_to "#" do
+          =icon('fas', 'cog', class: 'side-bar__user-name__top-items__icon')
+  .side-bar__group-info
+    .side-bar__group-info__chat
+      .side-bar__group-info__chat__group-name
+        高田衛公式チャットグループ
+      .side-bar__group-info__chat__message-alert
+        メッセージはありません
+    .side-bar__group-info__chat
+      .side-bar__group-info__chat__group-name
+        高田衛非公式チャットグループ
+      .side-bar__group-info__chat__message-alert
+        メッセージはありません

@@ -1,0 +1,107 @@
+.main-chat{
+  width: calc(100vw - 300px);
+  height: 100vh;
+  background-color: $WhiteColor;
+  float: left;
+
+  &__group-info{
+    height: 100px;
+    background-color: $WhiteColor;
+    border-bottom: #eeeeee solid;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+
+    &__group-name{
+      padding: 35px 0 15px; 
+      color: $BlackColor;
+      font-size: 20px;
+
+      &__group-member{
+        color: $GrayColor;
+        font-size: 12px;
+      }
+    }
+
+    &__edit-btn{
+      margin-top: 28px;
+      height: 40px;
+      width: 72px;
+      border: 1px $GreenColor solid;
+      color: $GreenColor;
+      font-size: 16px;
+      line-height: 40px;
+      padding: 0 20px;
+      text-decoration: none;
+    }
+  }
+  
+  &__message-info{
+    height: calc(100% - 190px);
+    background-color: #fafafa;
+    padding: 35px 0 0 40px;
+
+    &__name-time{
+      display: flex;
+      margin-bottom: 12px;
+
+      &__name{
+        color: $BlackColor;
+        font-size: 16px;
+      }
+      &__time{
+        margin-left: 5px;
+        color: $GrayColor;
+        font-size: 12px;
+      }
+    }
+
+    &__text{
+      color: #434a54;
+      font-size: 14px;
+      margin-bottom: 46px;
+    }
+  }
+  
+  &__message-form{
+    height: 90px;
+    background-color: #d2d2d2;
+    display: flex;
+
+    &__input-area{
+      height: $InputHeight;
+      width: calc(100% - 195px);
+      margin: auto 15px auto 40px;
+      background-color: $WhiteColor;
+      position: relative;
+
+      &__message{
+        position: absolute;
+        height: $InputHeight;
+        width: calc(100% - 40px);
+        padding:0 10px;
+        border-style: none;
+      }
+      &__image{
+        font-size: 1.3rem;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        input{
+          display: none;
+        }
+        cursor: pointer;
+      }
+    }
+    &__submit{
+      margin: auto 40px auto 0;
+      height: $InputHeight;
+      width: 100px;
+      padding: 0 30px;
+      background-color: $GreenColor;
+      color: $WhiteColor;
+      line-height: 50px;
+      cursor: pointer;
+    }
+  }
+}

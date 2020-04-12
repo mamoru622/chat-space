@@ -1,0 +1,32 @@
+.main-chat
+  .main-chat__group-info
+    .main-chat__group-info__group-name
+      Test
+      .main-chat__group-info__group-name__group-member
+        member : 高田
+    =link_to "#",class: "main-chat__group-info__edit-btn" do
+      Edit
+    
+  .main-chat__message-info
+    .main-chat__message-info__name-time
+      .main-chat__message-info__name-time__name
+        高田衛
+      .main-chat__message-info__name-time__time
+        2020/01/01(sun) 00:00:00
+    .main-chat__message-info__text
+      あけましておめでとうございます。
+    .main-chat__message-info__name-time
+      .main-chat__message-info__name-time__name
+        高田衛
+      .main-chat__message-info__name-time__time
+        2020/01/01(sun) 00:00:01
+    .main-chat__message-info__text
+      あけましたおめでとうございました。
+  .main-chat__message-form
+    .main-chat__message-form__input-area
+      %input.main-chat__message-form__input-area__message{type: "text", placeholder: "type a message"}
+      %label{class: "main-chat__message-form__input-area__image"}
+        = icon('far', 'image')
+        %input{type: "file"}
+    .main-chat__message-form__submit
+      Send
