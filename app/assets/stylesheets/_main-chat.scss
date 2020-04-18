@@ -66,35 +66,32 @@
   &__message-form{
     height: 90px;
     background-color: #d2d2d2;
-    display: flex;
+    padding: 20px 40px;
 
     &__input-area{
       height: $InputHeight;
       width: calc(100% - 195px);
-      margin: auto 15px auto 40px;
       background-color: $WhiteColor;
       position: relative;
+      float: left;
 
-      &__message{
-        position: absolute;
-        height: $InputHeight;
-        width: calc(100% - 40px);
-        padding:0 10px;
-        border-style: none;
+      &__text{
+      padding: 0 40px 0 10px;
+      line-height: $InputHeight;
+      width: 100%;
+      border-style: none
       }
+
       &__image{
-        font-size: 1.3rem;
-        position: absolute;
+        top: 12px;
         right: 10px;
-        top: 10px;
-        input{
-          display: none;
-        }
-        cursor: pointer;
+        border-style: none;
+        position: absolute;
       }
     }
+      
     &__submit{
-      margin: auto 40px auto 0;
+      margin-left: 15px;
       height: $InputHeight;
       width: 100px;
       padding: 0 30px;
@@ -102,6 +99,16 @@
       color: $WhiteColor;
       line-height: 50px;
       cursor: pointer;
+      float: left;
     }
   }
+}
+
+.icon{
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.hidden{
+  display: none;
 }
