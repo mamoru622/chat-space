@@ -23,10 +23,10 @@
     .main-chat__message-info__text
       あけましたおめでとうございました。
   .main-chat__message-form
-    .main-chat__message-form__input-area
-      %input.main-chat__message-form__input-area__message{type: "text", placeholder: "type a message"}
-      %label{class: "main-chat__message-form__input-area__image"}
-        = icon('far', 'image')
-        %input{type: "file"}
-    .main-chat__message-form__submit
-      Send
+    = form_for [@group, @message] do |f|
+      .main-chat__message-form__input-area
+        = f.text_field :content, class: 'main-chat__message-form__input-area__text', placeholder: 'type a message'
+        = f.label :image, class: 'main-chat__message-form__input-area__image' do
+          = icon('far', 'image', class: 'icon')
+          = f.file_field :image, class: 'hidden'
+      = f.submit 'Send', class: 'main-chat__message-form__submit'
