@@ -6,7 +6,7 @@
         member:
         - @group.users.each do |user|
           = user.name
-    =link_to "#",class: "main-chat__group-info__edit-btn" do
+    =link_to edit_group_path(@group.id),class: "main-chat__group-info__edit-btn" do
       Edit
     
   .main-chat__message-info
