@@ -1,27 +1,17 @@
 .main-chat
   .main-chat__group-info
     .main-chat__group-info__group-name
-      Test
+      = @group.name
       .main-chat__group-info__group-name__group-member
-        member : 高田
-    =link_to "#",class: "main-chat__group-info__edit-btn" do
+        member:
+        - @group.users.each do |user|
+          = user.name
+    =link_to edit_group_path(@group.id),class: "main-chat__group-info__edit-btn" do
       Edit
     
   .main-chat__message-info
-    .main-chat__message-info__name-time
-      .main-chat__message-info__name-time__name
-        高田衛
-      .main-chat__message-info__name-time__time
-        2020/01/01(sun) 00:00:00
-    .main-chat__message-info__text
-      あけましておめでとうございます。
-    .main-chat__message-info__name-time
-      .main-chat__message-info__name-time__name
-        高田衛
-      .main-chat__message-info__name-time__time
-        2020/01/01(sun) 00:00:01
-    .main-chat__message-info__text
-      あけましたおめでとうございました。
+    = render @messages
+    
   .main-chat__message-form
     = form_for [@group, @message] do |f|
       .main-chat__message-form__input-area
