@@ -78,10 +78,9 @@
 
     &__input-area{
       height: $InputHeight;
-      width: calc(100% - 195px);
+      width: 100%;
       background-color: $WhiteColor;
       position: relative;
-      float: left;
 
       &__text{
       padding: 0 40px 0 10px;
@@ -91,7 +90,7 @@
       }
 
       &__image{
-        top: 12px;
+        top: 10px;
         right: 10px;
         border-style: none;
         position: absolute;
@@ -107,7 +106,6 @@
       color: $WhiteColor;
       line-height: 50px;
       cursor: pointer;
-      float: left;
     }
   }
 }
@@ -119,4 +117,8 @@
 
 .hidden{
   display: none;
+}
+
+.new_message{
+  display: flex;
 }
